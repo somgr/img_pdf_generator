@@ -2,7 +2,7 @@ import img2pdf
 import os
 from PIL import Image, ImageDraw, ImageFont
 
-def generate_image(start=int(input()), stop=int(input())+1):
+def generate_image(start=int(input("From: ")), stop=int(input("To: "))+1):
     for i in range(start, stop):
         image = Image.new('RGB', (843, 596), (255, 255, 255, 0))
         font = ImageFont.truetype("impact.ttf", 390)
